@@ -52,11 +52,11 @@ const airDropSol = async (airdropAmount) => {
 const extractAirdropAmountFromParams = () => {
   const amount = parseInt(process.argv[2]);
   if (amount === undefined || amount === null) {
-    console.log("------------------------------------", "No amount from params");
+    console.log("---------", "No amount from params");
     return DEFAULT_AIRDROP_AMOUNT;
   }
   if (isNaN(amount)) {
-    console.log("------------------------------------", "Invalid parameter detected for airdrop amount");
+    console.log("---------", "Invalid parameter detected for airdrop amount");
     return DEFAULT_AIRDROP_AMOUNT;
   }
   return amount;
@@ -65,7 +65,7 @@ const extractAirdropAmountFromParams = () => {
 // Show the wallet balance before and after airdropping SOL
 const mainFunction = async () => {
   const airdropAmount = extractAirdropAmountFromParams();
-  console.log("------------------------------------", airdropAmount, "SOL will be requested for the airdrop");
+  console.log("---------", airdropAmount, "SOL will be requested for the airdrop");
 
   await getWalletBalance();
   await airDropSol(airdropAmount);
