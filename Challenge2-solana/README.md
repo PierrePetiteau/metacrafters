@@ -1,4 +1,4 @@
-# Challenge 1 - create a wallet and request aidrop on devnet
+# Challenge 2 - create a a transfer between two wallets
 
 You can run the following command to airdrop 2 SOL in a generated wallet
 then transfer half of the balance of the generated wallet to your wallet
