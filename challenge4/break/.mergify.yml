@@ -1,0 +1,25 @@
+pull_request_rules:
+  - name: automatic merge on CI success
+    conditions:
+      - status-success=client
+      - status-success=server
+      - label=automerge
+    actions:
+      merge:
+        method: rebase
+  - name: remove automerge label on CI failure
+    conditions:
+      - label=automerge
+      - or:
+        - status-failure=client
+        - status-failure=server
+    actions:
+      label:
+        remove:
+          - automerge
+  - name: remove outdated reviews
+    conditions:
+      - base=main
+    actions:
+      dismiss_reviews:
+        changes_requested: true

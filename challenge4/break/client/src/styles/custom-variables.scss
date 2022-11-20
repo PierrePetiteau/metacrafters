@@ -1,0 +1,33 @@
+$path-to-img: "../../images/dashkit" !default;
+$path-to-fonts: "../../fonts" !default;
+
+$font-family-sans-serif: "Exo 2", sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$border-radius: 0.125rem !default;
+$gray-700: #888 !default;
+$gray-600-dark: #555 !default;
+$gray-700-dark: #444 !default;
+$gray-750-dark: #333 !default;
+$gray-800-dark: #222 !default;
+$gray-900-dark: #111 !default;
+$black-dark: #000000;
+
+$black: #000000;
+$white: #ffffff;
+$green: #00ffad;
+$pink: #ff00a8;
+$purple: #ac62dd;
+$red: #ea134d;
+$orange: #e8873f;
+
+$info: $purple;
+$danger: $red;
+$warning: $pink;
+$primary: $green;
+
+$card-border-radius: 0.25rem !default;
+$card-outline-color: $gray-600-dark !default;
+$spacer: 1rem !default;
+
+$modal-md: 400px !default;
